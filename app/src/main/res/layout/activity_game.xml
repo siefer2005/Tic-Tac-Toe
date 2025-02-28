@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FD4C4C"
+    android:orientation="vertical"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/autour_one"
+        android:padding="8dp"
+        android:text="Tic Tac Toe"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/game_status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/autour_one"
+        android:gravity="center"
+        android:letterSpacing="0.04"
+        android:text="Game not started"
+        android:textColor="#009688"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3">
+
+
+        <Button
+            android:id="@+id/btn_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/Yellow"
+            android:tag="0"
+            android:textColorLink="#EDDF5D"
+            android:textSize="60sp"
+            tools:text="X" />
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:tag="1"
+            android:background="@color/Yellow"
+            android:textColorLink="#EDDF5D"
+            android:textSize="60sp"
+            tools:text="X" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:tag="2"
+            android:background="@color/Yellow"
+            android:textColorLink="#EDDF5D"
+            android:textSize="60sp"
+            tools:text="X" />
+
+
+
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/Yellow"
+            android:tag="3"
+            android:textColorLink="#EDDF5D"
+            android:textSize="60sp"
+            tools:text="X" />
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:tag="4"
+            android:background="@color/Yellow"
+            android:textColorLink="#EDDF5D"
+            android:textSize="60sp"
+            tools:text="X" />
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/Yellow"
+            android:tag="5"
+            android:textColorLink="#EDDF5D"
+            android:textSize="60sp"
+            tools:text="X" />
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/Yellow"
+            android:tag="6"
+            android:textColorLink="#EDDF5D"
+            android:textSize="60sp"
+            tools:text="X" />
+
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/Yellow"
+            android:tag="7"
+            android:textColorLink="#EDDF5D"
+            android:textSize="60sp"
+            tools:text="X" />
+
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:tag="8"
+            android:background="@color/Yellow"
+            android:textColorLink="#EDDF5D"
+            android:textSize="60sp"
+            tools:text="X" />
+
+
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/start_game_btn"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@color/Yellow"
+        android:fontFamily="@font/autour_one"
+        android:text="Start game" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tile_page_1" />
+
+
+</LinearLayout>
